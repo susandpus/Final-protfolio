@@ -274,7 +274,7 @@ header::before {
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 10px;
 }
 
 .services_container .cards .card {
@@ -302,7 +302,8 @@ header::before {
 .sbox h2 {
     font-size: 1.2rem;
     color: var(--normal);
-}
+    }
+
 
 .sbox p {
     margin: 1.2rem 0;
@@ -321,7 +322,7 @@ header::before {
 .sbox a:hover {
     background-color: var(--normal);
     color: var(--bg);
-    border: 1px solid var(--bg);
+    border: 2px solid var(--bg);
 }
 
 .services_container .cards .card:hover .sbox i {
@@ -344,8 +345,42 @@ header::before {
 .services_container .cards .card:hover::after {
     transform: rotate(4deg);
 }
-
 /* service-end */
+
+/* protfolio */
+.protfolio-1{background-color: var(--black);}
+.portfolio_container {
+    text-align: center;
+    margin-top: 3rem;background-color: var(--black);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: var(--black);
+    border-radius: 2rem; box-shadow: 0.3rem 0.3rem 1.2rem rgba(0, 0, 0, 0.986);
+}
+
+.gallery a {
+    height: 15rem;
+    width: 20rem;
+    margin: 1.2rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    box-shadow: 0 3px 5px var(--primary);
+}
+
+.gallery a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery a img:hover {
+    transform: scale(1.4);
+}
 
 /* Footer */
 footer {
